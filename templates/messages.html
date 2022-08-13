@@ -31,7 +31,7 @@
                 <!-- /col-md-6 -->
 
                 <!-- Col-md-6 -->
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <!-- Contact Form -->
                     <h2 class="display-3">
                         All Messages
@@ -44,6 +44,7 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Message</th>
+                                <th scope="col">Actions</th>
 
                             </tr>
                         </thead>
@@ -55,6 +56,10 @@
                                 <td>{{message.name}}</td>
                                 <td>{{message.email}}</td>
                                 <td>{{message.message}}</td>
+                                <td>
+                                    <a href="/delete/{{message.id}}">Delete</a>
+                                    <a href="/update/{{message.id}}">Update</a>
+                                </td>
                             </tr>
                             {% endfor %}
                         </tbody>
