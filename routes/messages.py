@@ -53,7 +53,7 @@ def login():
     from models import Messages,db,User
     user=User.query.get(1)
     if request.method=="POST":
-        if request.form['u_email']==user.email and request.form['u_password']==user.password:
+        if request.form['a_email']==user.email and request.form['a_password']==user.password:
             user.is_logged_in=True
             db.session.commit()
             return redirect('/messages')
