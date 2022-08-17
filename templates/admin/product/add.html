@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Custom style -->
+    <link rel="stylesheet" type="text/css" href="">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- ============================================
+  ===================== MAIN =================== -->
+    <main class="py-3 mb-3">
+        <div class="container">
+            <div class="row">
+
+
+
+                <!-- Col-md-6 -->
+                <div class="col-md-6">
+
+                    <h2 class="display-3">
+                        Add a new product
+                    </h2>
+
+
+
+
+                    <form action="/add" method="post">
+                        <div class="row">
+
+
+                            <div class="col-md-6 pb-3">
+                                <input class="form-control input" name="u_brand" data-form-field="Product-Brand" placeholder="Product-Name" required="">
+                            </div>
+
+                            <div class="col-md-12 pb-3">
+                                <input class="form-control input" name="u_model" data-form-field="Product-Model" placeholder="Product-Model" required="">
+                            </div>
+
+                            <div class="col-md-12 pb-3">
+                                <textarea class="form-control input" name="u_description" data-form-field="Product-Description" placeholder="Product-Description" style="resize:none"></textarea>
+                            </div>
+                            <div class="input-group-btn col-md-12">
+                                <input type="submit" value="add"> </div>
+                    </form>
+                    </div>
+                    <!-- /col-md-6 -->
+
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+    </main>
+
+
+
+</body>
+
+</html>

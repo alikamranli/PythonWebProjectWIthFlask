@@ -8,7 +8,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///project0.db'
 db=SQLAlchemy(app)
 migrate = Migrate(app, db)
 from models import *
-from routes.messages import *
+from routes.admin.product import *
 
 
 db.create_all()
